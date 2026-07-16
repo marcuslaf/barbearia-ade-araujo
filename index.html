@@ -1,37 +1,28 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" data-theme="dark">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        <!-- SEO Básico -->
         <title>Barbearia AD Araújo | Corte de Cabelo, Barba e Coloração</title>
         <meta name="description" content="Barbearia AD Araújo — cortes modernos, barba feita e coloração profissional. Agende seu horário e transforme seu visual com qualidade e estilo.">
         <meta name="keywords" content="barbearia, corte de cabelo, barba, coloração, grooming">
         <meta name="author" content="Barbearia AD Araújo">
         <meta name="robots" content="index, follow">
-
-        <!-- Open Graph / Facebook -->
         <meta property="og:type" content="website">
         <meta property="og:url" content="https://seudominio.com/">
         <meta property="og:title" content="Barbearia AD Araújo | Corte, Barba e Coloração">
         <meta property="og:description" content="Barbearia especializada em cortes modernos, barba e coloração. Agende seu horário!">
         <meta property="og:image" content="Imagens/Logo da Barbearia AD Araujo 1.png">
         <meta property="og:locale" content="pt_BR">
-
-        <!-- Twitter Card -->
         <meta name="twitter:card" content="summary_large_image">
         <meta name="twitter:title" content="Barbearia AD Araújo | Corte, Barba e Coloração">
         <meta name="twitter:description" content="Barbearia especializada em cortes modernos, barba e coloração. Agende seu horário!">
         <meta name="twitter:image" content="Imagens/Logo da Barbearia AD Araujo 1.png">
-
-        <!-- Canonical -->
         <link rel="canonical" href="https://seudominio.com/">
-
-        <!-- Favicon -->
         <link rel="icon" type="image/png" href="Imagens/favicon.png">
-
-        <!-- Schema.org Local Business -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
         <script type="application/ld+json">
         {
             "@context": "https://schema.org",
@@ -66,123 +57,327 @@
             "priceRange": "$$"
         }
         </script>
-
         <link rel="stylesheet" href="styles.css">
         <script src="scripts.js" defer></script>
     </head>
     <body>
-        <!-- Skip to content (acessibilidade) -->
-        <a href="#conteudo-principal" class="skip-link">Pular para o conteúdo principal</a>
+        <a href="#conteudo-principal" class="skip-link">Pular para o conteudo principal</a>
 
-        <!-- Navegação -->
         <nav class="menu" aria-label="Menu principal">
             <div class="menu-container">
-                <a href="#" class="menu-logo" aria-label="Barbearia AD Araújo - Página inicial">
-                    AD Araújo
+                <a href="#" class="menu-logo" aria-label="Barbearia AD Araujo - Pagina inicial">
+                    <span class="logo-icon">&#9986;</span> AD Araujo
                 </a>
-                <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-links">
-                    <span class="hamburger"></span>
-                </button>
+                <div class="menu-actions">
+                    <button class="theme-toggle" aria-label="Alternar tema" title="Alternar tema claro/escuro">
+                        <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+                        <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                    </button>
+                    <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-links">
+                        <span class="hamburger"></span>
+                    </button>
+                </div>
                 <ul class="links" id="menu-links" role="menubar">
-                    <li role="none"><a href="#servicos" role="menuitem">Serviços</a></li>
+                    <li role="none"><a href="#servicos" role="menuitem">Servicos</a></li>
                     <li role="none"><a href="#sobre" role="menuitem">Sobre</a></li>
                     <li role="none"><a href="#galeria" role="menuitem">Galeria</a></li>
+                    <li role="none"><a href="#depoimentos" role="menuitem">Depoimentos</a></li>
                     <li role="none"><a href="#contato" role="menuitem">Contato</a></li>
                 </ul>
             </div>
         </nav>
 
-        <!-- Header / Hero -->
-        <header class="hero-header">
-            <h1>Barbearia AD Araújo</h1>
-            <p>A sua melhor escolha para um visual impecável</p>
-            <img
-                src="Imagens/Logo da Barbearia AD Araujo 1.png"
-                alt="Logo da Barbearia AD Araújo — estabelecimento de cortes masculinos e coloração"
-                width="300"
-                height="300"
-            >
-            <a href="#contato" class="cta-button">Agende seu horário</a>
+        <header class="hero">
+            <div class="hero-bg">
+                <div class="hero-overlay"></div>
+            </div>
+            <div class="hero-content reveal">
+                <img src="Imagens/Logo da Barbearia AD Araujo 1.png" alt="Logo da Barbearia AD Araujo" class="hero-logo" width="160" height="160">
+                <h1 class="hero-title">Barbearia AD Araujo</h1>
+                <p class="hero-subtitle">A sua melhor escolha para um visual impecavel</p>
+                <div class="hero-cta">
+                    <a href="#contato" class="btn btn-primary">Agende seu horario</a>
+                    <a href="#servicos" class="btn btn-outline">Nossos servicos</a>
+                </div>
+                <div class="hero-badges">
+                    <div class="badge">
+                        <span class="badge-icon">&#11088;</span>
+                        <span class="badge-text">5.0 no Google</span>
+                    </div>
+                    <div class="badge">
+                        <span class="badge-icon">&#127942;</span>
+                        <span class="badge-text">10+ anos de experiencia</span>
+                    </div>
+                    <div class="badge">
+                        <span class="badge-icon">&#128104;</span>
+                        <span class="badge-text">5.000+ clientes</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-scroll-indicator">
+                <span>Role para baixo</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+            </div>
         </header>
 
-        <!-- Conteúdo Principal -->
         <main id="conteudo-principal">
-            <!-- Serviços -->
             <section id="servicos" aria-labelledby="servicos-heading">
-                <h2 id="servicos-heading">Serviços</h2>
-                <ul>
-                    <li>
-                        <img src="Imagens/2.png" alt="Corte de cabelo masculino feito por profissional da Barbearia AD Araújo" width="400" height="300" loading="lazy">
-                        <p>Corte de cabelo</p>
-                    </li>
-                    <li>
-                        <img src="Imagens/1.png" alt="Barba aparada e estilizada pela Barbearia AD Araújo" width="400" height="300" loading="lazy">
-                        <p>Barba</p>
-                    </li>
-                    <li>
-                        <img src="Imagens/3.png" alt="Coloração capilar profissional na Barbearia AD Araújo" width="400" height="300" loading="lazy">
-                        <p>Coloração</p>
-                    </li>
-                    <li>
-                        <img src="Imagens/4.png" alt="Produtos de grooming e cuidados masculinos disponíveis na Barbearia AD Araújo" width="400" height="300" loading="lazy">
-                        <p>Produtos</p>
-                    </li>
-                </ul>
-            </section>
-
-            <!-- Sobre -->
-            <section id="sobre" aria-labelledby="sobre-heading">
-                <h2 id="sobre-heading">Sobre Nós</h2>
-                <p>
-                    Somos uma barbearia especializada em oferecer o melhor serviço com qualidade e estilo. Nossa equipe de profissionais está pronta para atender você da melhor forma possível, garantindo um corte que realça a sua personalidade.
-                </p>
-            </section>
-
-            <!-- Galeria -->
-            <section id="galeria" aria-labelledby="galeria-heading">
-                <h2 id="galeria-heading">Galeria</h2>
-                <div class="gallery" role="list">
-                    <img src="Imagens/1.png" alt="Trabalho de barba feito na Barbearia AD Araújo" width="400" height="300" loading="lazy" role="listitem" tabindex="0">
-                    <img src="Imagens/2.png" alt="Corte de cabelo moderno feito na Barbearia AD Araújo" width="400" height="300" loading="lazy" role="listitem" tabindex="0">
-                    <img src="Imagens/3.png" alt="Coloração capilar feita na Barbearia AD Araújo" width="400" height="300" loading="lazy" role="listitem" tabindex="0">
-                    <img src="Imagens/4.png" alt="Produtos para cuidados masculinos da Barbearia AD Araújo" width="400" height="300" loading="lazy" role="listitem" tabindex="0">
+                <div class="section-header reveal">
+                    <span class="section-tag">O que oferecemos</span>
+                    <h2 id="servicos-heading">Nossos Servicos</h2>
+                    <p class="section-desc">Qualidade e estilo em cada detalhe</p>
+                </div>
+                <div class="servicos-grid">
+                    <div class="servico-card reveal">
+                        <div class="servico-img">
+                            <img src="Imagens/2.png" alt="Corte de cabelo masculino" width="400" height="300" loading="lazy">
+                        </div>
+                        <div class="servico-info">
+                            <h3>Corte de Cabelo</h3>
+                            <p>Corte masculino moderno ou classico, feito com tecnica e precisao.</p>
+                            <div class="servico-footer">
+                                <span class="servico-preco">R$ 45</span>
+                                <a href="#contato" class="btn btn-small">Agendar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="servico-card reveal">
+                        <div class="servico-img">
+                            <img src="Imagens/1.png" alt="Barba feita" width="400" height="300" loading="lazy">
+                        </div>
+                        <div class="servico-info">
+                            <h3>Barba</h3>
+                            <p>Design e aparo de barba com navalha, toalha quente e hidratacao.</p>
+                            <div class="servico-footer">
+                                <span class="servico-preco">R$ 35</span>
+                                <a href="#contato" class="btn btn-small">Agendar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="servico-card reveal">
+                        <div class="servico-img">
+                            <img src="Imagens/3.png" alt="Coloracao capilar" width="400" height="300" loading="lazy">
+                        </div>
+                        <div class="servico-info">
+                            <h3>Coloracao</h3>
+                            <p>Pigmentacao profissional para cobertura de fios brancos ou visual novo.</p>
+                            <div class="servico-footer">
+                                <span class="servico-preco">R$ 80</span>
+                                <a href="#contato" class="btn btn-small">Agendar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="servico-card reveal">
+                        <div class="servico-img">
+                            <img src="Imagens/4.png" alt="Produtos de grooming" width="400" height="300" loading="lazy">
+                        </div>
+                        <div class="servico-info">
+                            <h3>Produtos</h3>
+                            <p>Selecao de pomadas, oleos e cuidados para manter seu visual impecavel.</p>
+                            <div class="servico-footer">
+                                <span class="servico-preco">A partir de R$ 25</span>
+                                <a href="#contato" class="btn btn-small">Saiba mais</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
 
-            <!-- Contato -->
+            <section id="sobre" aria-labelledby="sobre-heading">
+                <div class="sobre-container">
+                    <div class="sobre-img reveal">
+                        <img src="Imagens/logo_horizontal.jpg" alt="Interior da Barbearia AD Araujo" width="600" height="400" loading="lazy">
+                    </div>
+                    <div class="sobre-texto reveal">
+                        <span class="section-tag">Quem somos</span>
+                        <h2 id="sobre-heading">Sobre Nos</h2>
+                        <p>Somos uma barbearia especializada em oferecer o melhor servico com qualidade e estilo. Nossa equipe de profissionais esta pronta para atender voce da melhor forma possivel, garantindo um corte que realca a sua personalidade.</p>
+                        <div class="sobre-stats">
+                            <div class="stat">
+                                <span class="stat-number" data-target="10">0</span><span class="stat-suffix">+</span>
+                                <span class="stat-label">Anos de experiencia</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number" data-target="5000">0</span><span class="stat-suffix">+</span>
+                                <span class="stat-label">Clientes atendidos</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number" data-target="15">0</span><span class="stat-suffix">+</span>
+                                <span class="stat-label">Premios recebidos</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="galeria" aria-labelledby="galeria-heading">
+                <div class="section-header reveal">
+                    <span class="section-tag">Nosso trabalho</span>
+                    <h2 id="galeria-heading">Galeria</h2>
+                    <p class="section-desc">Confira alguns dos nossos melhores trabalhos</p>
+                </div>
+                <div class="gallery-masonry">
+                    <div class="gallery-item gallery-item--tall reveal">
+                        <img src="Imagens/1.png" alt="Trabalho de barba feito na Barbearia AD Araujo" width="400" height="600" loading="lazy" tabindex="0">
+                        <div class="gallery-overlay"><span>Barba</span></div>
+                    </div>
+                    <div class="gallery-item reveal">
+                        <img src="Imagens/2.png" alt="Corte de cabelo moderno feito na Barbearia AD Araujo" width="400" height="400" loading="lazy" tabindex="0">
+                        <div class="gallery-overlay"><span>Corte</span></div>
+                    </div>
+                    <div class="gallery-item reveal">
+                        <img src="Imagens/3.png" alt="Coloracao capilar feita na Barbearia AD Araujo" width="400" height="400" loading="lazy" tabindex="0">
+                        <div class="gallery-overlay"><span>Coloracao</span></div>
+                    </div>
+                    <div class="gallery-item gallery-item--wide reveal">
+                        <img src="Imagens/4.png" alt="Produtos para cuidados masculinos da Barbearia AD Araujo" width="800" height="400" loading="lazy" tabindex="0">
+                        <div class="gallery-overlay"><span>Produtos</span></div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="depoimentos" aria-labelledby="depoimentos-heading">
+                <div class="section-header reveal">
+                    <span class="section-tag">O que dizem</span>
+                    <h2 id="depoimentos-heading">Depoimentos</h2>
+                    <p class="section-desc">A satisfacao dos nossos clientes e nossa maior motivacao</p>
+                </div>
+                <div class="depoimentos-grid">
+                    <div class="depoimento-card reveal">
+                        <div class="depoimento-stars">&#11088;&#11088;&#11088;&#11088;&#11088;</div>
+                        <p class="depoimento-texto">"Melhor barbearia da regiao! O atendimento e excelente e o corte sempre fica perfeito. Recomendo demais!"</p>
+                        <div class="depoimento-autor">
+                            <div class="depoimento-avatar">RS</div>
+                            <div>
+                                <strong>Rafael Santos</strong>
+                                <span>Cliente ha 3 anos</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="depoimento-card reveal">
+                        <div class="depoimento-stars">&#11088;&#11088;&#11088;&#11088;&#11088;</div>
+                        <p class="depoimento-texto">"Ambiente top, profissionais muito capacitados. Fui fazer a barba e sai com outro visual. Voltarei sempre!"</p>
+                        <div class="depoimento-autor">
+                            <div class="depoimento-avatar">ML</div>
+                            <div>
+                                <strong>Marcos Lima</strong>
+                                <span>Cliente ha 1 ano</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="depoimento-card reveal">
+                        <div class="depoimento-stars">&#11088;&#11088;&#11088;&#11088;&#11088;</div>
+                        <p class="depoimento-texto">"Fui indicado por um amigo e nao me arrependi. Servico de primeira, ambiente aconchegante e preco justo!"</p>
+                        <div class="depoimento-autor">
+                            <div class="depoimento-avatar">PO</div>
+                            <div>
+                                <strong>Pedro Oliveira</strong>
+                                <span>Cliente ha 2 anos</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             <section id="contato" aria-labelledby="contato-heading">
-                <h2 id="contato-heading">Contato</h2>
-                <form id="form-contato" novalidate>
-                    <div class="form-group">
-                        <label for="form-nome">Nome:</label>
-                        <input type="text" id="form-nome" name="nome" required autocomplete="name" placeholder="Seu nome completo">
+                <div class="contato-container">
+                    <div class="contato-info reveal">
+                        <span class="section-tag">Fale conosco</span>
+                        <h2 id="contato-heading">Contato</h2>
+                        <div class="info-items">
+                            <div class="info-item">
+                                <span class="info-icon">&#128205;</span>
+                                <div>
+                                    <strong>Endereco</strong>
+                                    <p>Rua Exemplo, 123 - Sua Cidade, SP</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-icon">&#128222;</span>
+                                <div>
+                                    <strong>Telefone</strong>
+                                    <p>(XX) XXXXX-XXXX</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-icon">&#128337;</span>
+                                <div>
+                                    <strong>Horario</strong>
+                                    <p>Seg-Sex: 09h as 19h</p>
+                                    <p>Sab: 09h as 17h</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="social-links">
+                            <a href="#" class="social-link" aria-label="Instagram" title="Instagram">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                            </a>
+                            <a href="#" class="social-link" aria-label="Facebook" title="Facebook">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                            </a>
+                        </div>
                     </div>
-
-                    <div class="form-group">
-                        <label for="form-email">Email:</label>
-                        <input type="email" id="form-email" name="email" required autocomplete="email" placeholder="seu@email.com">
+                    <div class="contato-form reveal">
+                        <form id="form-contato" novalidate>
+                            <div class="form-group">
+                                <label for="form-nome">Nome:</label>
+                                <input type="text" id="form-nome" name="nome" required autocomplete="name" placeholder="Seu nome completo">
+                            </div>
+                            <div class="form-group">
+                                <label for="form-email">Email:</label>
+                                <input type="email" id="form-email" name="email" required autocomplete="email" placeholder="seu@email.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="form-telefone">Telefone:</label>
+                                <input type="tel" id="form-telefone" name="telefone" required autocomplete="tel" placeholder="(XX) XXXXX-XXXX">
+                            </div>
+                            <div class="form-group">
+                                <label for="form-mensagem">Mensagem:</label>
+                                <textarea id="form-mensagem" name="mensagem" required rows="5" placeholder="Como podemos ajudar?"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-full">Enviar mensagem</button>
+                            <div class="form-status" aria-live="polite"></div>
+                        </form>
                     </div>
-
-                    <div class="form-group">
-                        <label for="form-mensagem">Mensagem:</label>
-                        <textarea id="form-mensagem" name="mensagem" required rows="5" placeholder="Como podemos ajudar?"></textarea>
-                    </div>
-
-                    <button type="submit">Enviar</button>
-                    <div class="form-status" aria-live="polite"></div>
-                </form>
+                </div>
             </section>
         </main>
 
         <footer>
-            <p>&copy; 2024 Barbearia AD Araújo. Todos os direitos reservados.</p>
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="footer-logo">&#9986; AD Araujo</span>
+                    <p>Sua barbearia de confianca. Qualidade, estilo e atendimento de excelencia.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Links</h4>
+                    <ul>
+                        <li><a href="#servicos">Servicos</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#galeria">Galeria</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Horarios</h4>
+                    <ul>
+                        <li>Seg-Sex: 09h - 19h</li>
+                        <li>Sab: 09h - 17h</li>
+                        <li>Dom: Fechado</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Barbearia AD Araujo. Todos os direitos reservados.</p>
+            </div>
         </footer>
 
-        <!-- Scroll to top -->
+        <a href="https://wa.me/55XXXXXXXXXXX" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Fale conosco pelo WhatsApp" title="Fale conosco pelo WhatsApp">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        </a>
+
         <button class="scroll-top" aria-label="Voltar ao topo" title="Voltar ao topo">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <polyline points="18 15 12 9 6 15"></polyline>
-            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="18 15 12 9 6 15"/></svg>
         </button>
     </body>
 </html>
