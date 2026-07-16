@@ -76,12 +76,20 @@
 
         <!-- Navegação -->
         <nav class="menu" aria-label="Menu principal">
-            <ul class="links">
-                <li><a href="#servicos">Serviços</a></li>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#galeria">Galeria</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
+            <div class="menu-container">
+                <a href="#" class="menu-logo" aria-label="Barbearia AD Araújo - Página inicial">
+                    AD Araújo
+                </a>
+                <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-links">
+                    <span class="hamburger"></span>
+                </button>
+                <ul class="links" id="menu-links" role="menubar">
+                    <li role="none"><a href="#servicos" role="menuitem">Serviços</a></li>
+                    <li role="none"><a href="#sobre" role="menuitem">Sobre</a></li>
+                    <li role="none"><a href="#galeria" role="menuitem">Galeria</a></li>
+                    <li role="none"><a href="#contato" role="menuitem">Contato</a></li>
+                </ul>
+            </div>
         </nav>
 
         <!-- Header / Hero -->
