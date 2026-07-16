@@ -193,6 +193,24 @@ a:hover {
     margin-bottom: 2rem;
 }
 
+.cta-button {
+    display: inline-block;
+    background-color: #1e90ff;
+    color: #fff;
+    padding: 0.85rem 2rem;
+    border-radius: 8px;
+    font-size: 1.05rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.25s ease, transform 0.2s ease;
+}
+
+.cta-button:hover {
+    background-color: #1873cc;
+    color: #fff;
+    transform: translateY(-2px);
+}
+
 .hero-header img {
     width: 200px;
     height: auto;
