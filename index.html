@@ -71,7 +71,11 @@
         <script src="scripts.js" defer></script>
     </head>
     <body>
-        <nav class="menu">
+        <!-- Skip to content (acessibilidade) -->
+        <a href="#conteudo-principal" class="skip-link">Pular para o conteúdo principal</a>
+
+        <!-- Navegação -->
+        <nav class="menu" aria-label="Menu principal">
             <ul class="links">
                 <li><a href="#servicos">Serviços</a></li>
                 <li><a href="#sobre">Sobre</a></li>
@@ -80,68 +84,83 @@
             </ul>
         </nav>
 
-        <header>
+        <!-- Header / Hero -->
+        <header class="hero-header">
             <h1>Barbearia AD Araújo</h1>
             <p>A sua melhor escolha para um visual impecável</p>
+            <img
+                src="Imagens/Logo da Barbearia AD Araujo 1.png"
+                alt="Logo da Barbearia AD Araújo — estabelecimento de cortes masculinos e coloração"
+                width="300"
+                height="300"
+            >
         </header>
 
-        <div class="hero">
-            <img src="Imagens/Logo da Barbearia AD Araujo 1.png" alt="Logo da Barbearia">
-        </div>
-
-        <main>
-            <section id="servicos">
-                <h2>Serviços</h2>
+        <!-- Conteúdo Principal -->
+        <main id="conteudo-principal">
+            <!-- Serviços -->
+            <section id="servicos" aria-labelledby="servicos-heading">
+                <h2 id="servicos-heading">Serviços</h2>
                 <ul>
                     <li>
-                        <img src="Imagens/2.png" alt="Corte de cabelo">
+                        <img src="Imagens/2.png" alt="Corte de cabelo masculino feito por profissional da Barbearia AD Araújo">
                         <p>Corte de cabelo</p>
                     </li>
                     <li>
-                        <img src="Imagens/1.png" alt="Barba">
+                        <img src="Imagens/1.png" alt="Barba aparada e estilizada pela Barbearia AD Araújo">
                         <p>Barba</p>
                     </li>
                     <li>
-                        <img src="Imagens/3.png" alt="Coloração">
+                        <img src="Imagens/3.png" alt="Coloração capilar profissional na Barbearia AD Araújo">
                         <p>Coloração</p>
                     </li>
                     <li>
-                        <img src="Imagens/4.png" alt="Produtos">
+                        <img src="Imagens/4.png" alt="Produtos de grooming e cuidados masculinos disponíveis na Barbearia AD Araújo">
                         <p>Produtos</p>
                     </li>
                 </ul>
             </section>
 
-            <section id="sobre">
-                <h2>Sobre Nós</h2>
+            <!-- Sobre -->
+            <section id="sobre" aria-labelledby="sobre-heading">
+                <h2 id="sobre-heading">Sobre Nós</h2>
                 <p>
                     Somos uma barbearia especializada em oferecer o melhor serviço com qualidade e estilo. Nossa equipe de profissionais está pronta para atender você da melhor forma possível, garantindo um corte que realça a sua personalidade.
                 </p>
             </section>
 
-            <section id="galeria">
-                <h2>Galeria</h2>
-                <div class="gallery">
-                    <img src="Imagens/1.png" alt="Corte de cabelo 1">
-                    <img src="Imagens/2.png" alt="Corte de cabelo 2">
-                    <img src="Imagens/3.png" alt="Corte de cabelo 3">
-                    <img src="Imagens/4.png" alt="Corte de cabelo 4">
+            <!-- Galeria -->
+            <section id="galeria" aria-labelledby="galeria-heading">
+                <h2 id="galeria-heading">Galeria</h2>
+                <div class="gallery" role="list">
+                    <img src="Imagens/1.png" alt="Trabalho de barba feito na Barbearia AD Araújo" role="listitem" tabindex="0">
+                    <img src="Imagens/2.png" alt="Corte de cabelo moderno feito na Barbearia AD Araújo" role="listitem" tabindex="0">
+                    <img src="Imagens/3.png" alt="Coloração capilar feita na Barbearia AD Araújo" role="listitem" tabindex="0">
+                    <img src="Imagens/4.png" alt="Produtos para cuidados masculinos da Barbearia AD Araújo" role="listitem" tabindex="0">
                 </div>
             </section>
 
-            <section id="contato">
-                <h2>Contato</h2>
-                <form>
-                    <label for="name">Nome:</label>
-                    <input type="text" id="name" name="name" required>
-                    
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
+            <!-- Contato -->
+            <section id="contato" aria-labelledby="contato-heading">
+                <h2 id="contato-heading">Contato</h2>
+                <form id="form-contato" novalidate>
+                    <div class="form-group">
+                        <label for="form-nome">Nome:</label>
+                        <input type="text" id="form-nome" name="nome" required autocomplete="name" placeholder="Seu nome completo">
+                    </div>
 
-                    <label for="message">Mensagem:</label>
-                    <textarea id="message" name="message" required></textarea>
+                    <div class="form-group">
+                        <label for="form-email">Email:</label>
+                        <input type="email" id="form-email" name="email" required autocomplete="email" placeholder="seu@email.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="form-mensagem">Mensagem:</label>
+                        <textarea id="form-mensagem" name="mensagem" required rows="5" placeholder="Como podemos ajudar?"></textarea>
+                    </div>
 
                     <button type="submit">Enviar</button>
+                    <div class="form-status" aria-live="polite"></div>
                 </form>
             </section>
         </main>
